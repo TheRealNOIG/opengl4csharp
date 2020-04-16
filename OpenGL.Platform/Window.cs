@@ -338,7 +338,7 @@ namespace OpenGL.Platform
             prevy = y;
         }
 
-        private static void OnMouse(int button, int state, int x, int y)
+        public static void OnMouse(int button, int state, int x, int y)
         {
             downx = x; downy = y;
 
@@ -364,7 +364,7 @@ namespace OpenGL.Platform
             }
         }
 
-        private static void OnMovePassive(int x, int y)
+        public static void OnMovePassive(int x, int y)
         {
             // everything below should eventually move into Input.cs
             bool handled = false;
